@@ -12,6 +12,9 @@ Parts to find:
 - Bus Voltage monitoring
 - Passives for regulators, decoupling caps, LED current limiting, etc.
 
+Pinouts:
+- Probably need to read some kernel source to see where the LAN9512 is connected
+
 Dimensions
 ==========
 
@@ -22,6 +25,10 @@ Pi CM3L
 =======
 
 Datasheet: https://www.raspberrypi.org/documentation/hardware/computemodule/RPI-CM-DATASHEET-V1_0.pdf
+
+UART: GPIO pins 14 and 15; may need pi3-disable-bt option for raspian?
+There is a second shitty UART that is by default mapped to these pins, but we don't need bluetooth
+so we might as well map the good one to them instead.
 
 Power
 =====
@@ -97,9 +104,59 @@ Switch
 
 Datasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/00002330B.pdf
 
+Needs 25MHz reference clock, +/- 50 ppm
+
+Power for three-supply option:
+- 1V2
+- 2V5
+- 1V8/2V5/3V3
+- p. 49: decoupling caps and inductors
+  - What value inductors should we use?
+- p. 167 Power consumption requirements
+
+Needs SPI (preferred) or I2C management connection
+
+p. 183 lists compatible magnetics and connection requirements
+
+It is /highly likely/ that we can go MAC-to-MAC for chaining the switch chips together and to the management chip.
+It is possible that this will require an external 125MHz clock.
+It is possible this will require some timing fiddling by elongating traces or using the chip's clock delay feature.
+
+https://stackoverflow.com/a/45371994
+
+Microchip has some application notes that show PCB routing and chassis/signal ground plane layout.
+
 PHY
 ---
 
 Needs 2V5, 1V8 (optional), 1V0/1V1
 
 https://www.digikey.com/product-detail/en/texas-instruments/DP83867IRPAPT/296-41117-2-ND/5168596
+
+Pi
+--
+
+Needs 3V3, 231 mA
+
+https://www.digikey.com/product-detail/en/microchip-technology/LAN9512-JZX/638-1086-ND/2166038
+
+
+Control/Management CPU
+======================
+
+Requirements
+------------
+- Ethernet; preferably gigabit (?)
+- Hefty enough to run an httpd, so probably also loonix/BSD (maybe, maybe not)
+- I2C/Dallas 1-wire for talking to temp sensors &c
+- SPI for talking to Switch chips, preferably
+- Voltage monitoring (on all busses) & current monitoring (on 5V bus)
+- Lotta gpios for switching pi power -- maybe 20 or so (3V3 and 1V8 per pi)
+
+Possible CPUs
+-------------
+
+Atmel SAM4E family: https://www.digikey.com/product-detail/en/microchip-technology/ATSAM4E16EA-AU/ATSAM4E16EA-AU-ND/4119512
+
+Atmel SAME70 family: https://www.digikey.com/product-detail/en/microchip-technology/ATSAME70Q20A-AN/1611-ATSAME70Q20A-AN-ND/6829726
+(These are pin-compatible with the SAM4E chips so we can upgrade later if we need, maybe.)
