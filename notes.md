@@ -20,6 +20,8 @@ Dimensions
 
 ~8" wide; max depth of 24" + fans on front
 
+The full footprint of the double-DDR2 slot with raspberry pis is approx 75x50 mm (that's rounded up to the nearest mm but they were on the lower end, so, padding).
+The slots are less than 10mm tall, so we could actually pack this thing like fucking crazy if we wanted, somehow.
 
 Pi CM3L
 =======
