@@ -12,9 +12,6 @@ Parts to find:
 - Bus Voltage monitoring
 - Passives for regulators, decoupling caps, LED current limiting, etc.
 
-Pinouts:
-- Probably need to read some kernel source to see where the LAN9512 is connected
-
 Dimensions
 ==========
 
@@ -139,6 +136,8 @@ Pi
 --
 
 Needs 3V3, 231 mA
+
+Connect to USB_DP, USB_DM
 
 https://www.digikey.com/product-detail/en/microchip-technology/LAN9512-JZX/638-1086-ND/2166038
 
