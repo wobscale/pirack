@@ -166,3 +166,9 @@ Atmel SAM4E family: https://www.digikey.com/product-detail/en/microchip-technolo
 
 Atmel SAME70 family: https://www.digikey.com/product-detail/en/microchip-technology/ATSAME70Q20A-AN/1611-ATSAME70Q20A-AN-ND/6829726
 (These are pin-compatible with the SAM4E chips so we can upgrade later if we need, maybe.)
+
+
+Silkscreening
+=============
+
+- Include copy{left,right} info
