@@ -1,0 +1,14 @@
+Copyright (c) 2017 LinuxMercedes, Iliana Weller
+
+Unless otherwise stated:
+
+Hardware design, documentation, and products are licensed under the TAPR Open
+Hardware License, version 1.0.  See LICENSE.TAPR.
+  https://www.tapr.org/OHL
+
+Software, firmware, or code loaded into programmable programmable devices is
+licensed under the GNU General Public License, version 3.  See LICENSE.GPL.
+  http://www.gnu.org/licenses/gpl-3.0.html
+
+This does not cover any third-party documentation in the datasheets/ directory
+and the contributors claim no copyright to those files.
