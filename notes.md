@@ -152,7 +152,12 @@ Requirements
 - I2C/Dallas 1-wire for talking to temp sensors &c
 - SPI for talking to Switch chips, preferably
 - Voltage monitoring (on all busses) & current monitoring (on 5V bus)
-- Lotta gpios for switching pi power -- maybe 20 or so (3V3 and 1V8 per pi)
+- GPIOs per Pi:
+	- 3 for switching power (5V (VBAT), 3V3, 1V8)
+	- 1 for RST
+	- 2? for UART
+	- 1 for enabling/disabling the SD card
+
 
 Possible CPUs
 -------------
