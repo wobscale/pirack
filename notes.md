@@ -29,6 +29,8 @@ UART: GPIO pins 14 and 15; may need pi3-disable-bt option for raspian?
 There is a second shitty UART that is by default mapped to these pins, but we don't need bluetooth
 so we might as well map the good one to them instead.
 
+Decoupling caps may not be required -- design POC board with spaces for them and add if necessary.
+
 Power
 =====
 
@@ -140,7 +142,6 @@ Needs 3V3, 231 mA
 Connect to USB_DP, USB_DM
 
 https://www.digikey.com/product-detail/en/microchip-technology/LAN9512-JZX/638-1086-ND/2166038
-
 
 Control/Management CPU
 ======================
