@@ -169,6 +169,17 @@ Atmel SAME70 family: https://www.digikey.com/product-detail/en/microchip-technol
 (These are pin-compatible with the SAM4E chips so we can upgrade later if we need, maybe.)
 
 
+Temp Sensors
+============
+
+CM3L thermal throttles at 85 degrees science, so that's the limit of what we care about being able to sense.
+
+This looks like a fine chip; talks i2c and wants 3v3 or 5v, both of which should be nearby for the cm3l power anyway.
+Resolution is +/- 2degC over the range we care about.
+
+https://www.digikey.com/product-detail/en/maxim-integrated/DS75U-C12-T-R/DS75U-C12-T-RCT-ND/5819921
+
+
 Silkscreening
 =============
 
