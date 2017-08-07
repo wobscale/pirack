@@ -82,9 +82,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="354.75441"
-     inkscape:cy="169.56926"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="524.18103"
+     inkscape:cy="158.96511"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -101,7 +101,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -585,12 +585,12 @@
          id="tspan5183"
          x="162.98334"
          y="275.56873"
-         style="stroke-width:0.26458332px">Power and</tspan><tspan
+         style="stroke-width:0.26458332px">Power, RST,</tspan><tspan
          sodipodi:role="line"
          x="162.98334"
          y="282.62427"
          style="stroke-width:0.26458332px"
-         id="tspan5187">SD_CLK</tspan><tspan
+         id="tspan5187">and SD_CLK</tspan><tspan
          sodipodi:role="line"
          x="162.98334"
          y="289.67984"
@@ -604,13 +604,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="124.63917"
-       y="269.51477"
+       x="124.77146"
+       y="284.46371"
        id="text5197"><tspan
          sodipodi:role="line"
          id="tspan5195"
-         x="124.63917"
-         y="269.51477"
+         x="124.77146"
+         y="284.46371"
          style="stroke-width:0.26458332px">UART</tspan></text>
     <text
        xml:space="preserve"
@@ -637,14 +637,19 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="-0.093544275"
-       y="69.593719"
+       x="0.093544386"
+       y="62.29726"
        id="text5227"><tspan
          sodipodi:role="line"
          id="tspan5225"
-         x="-0.093544275"
-         y="69.593719"
-         style="stroke-width:0.26458332px;font-size:4.93888889px">PWR</tspan></text>
+         x="0.093544386"
+         y="62.29726"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">PWR</tspan><tspan
+         sodipodi:role="line"
+         x="0.093544386"
+         y="69.536102"
+         style="font-size:4.93888903px;stroke-width:0.26458332px"
+         id="tspan4615">RST</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -661,5 +666,44 @@
        d="m 44.846874,208.95989 v 77.32449 h 96.405066 v -34.93402"
        id="path5257"
        inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05799997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4621"
+       width="27.008629"
+       height="20.179705"
+       x="93.641365"
+       y="250.75883" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="97.742409"
+       y="258.96091"
+       id="text4625"><tspan
+         sodipodi:role="line"
+         id="tspan4623"
+         x="97.742409"
+         y="258.96091"
+         style="stroke-width:0.26458332px">Temp</tspan><tspan
+         sodipodi:role="line"
+         x="97.742409"
+         y="266.01645"
+         style="stroke-width:0.26458332px"
+         id="tspan4627">Sensor</tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.18487239;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 120.91458,260.75208 h 24.20937"
+       id="path4629"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="121.57604"
+       y="259.42917"
+       id="text4633"><tspan
+         sodipodi:role="line"
+         id="tspan4631"
+         x="121.57604"
+         y="259.42917"
+         style="stroke-width:0.26458332px">I2C</tspan></text>
   </g>
 </svg>
