@@ -1,4 +1,4 @@
-update=Thu 03 Aug 2017 06:40:43 PM CDT
+update=Mon 07 Aug 2017 09:37:40 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=/home/nathan/wob/pirack/components/cm3l
 LibName31=LAN9512
+LibName32=usb_a_x2
