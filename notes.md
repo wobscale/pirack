@@ -39,6 +39,13 @@ SD Card slot
 
 https://www.digikey.com/product-detail/en/molex-llc/1051620001/WM14405CT-ND/6133135
 
+USB
+---
+
+This is a double-stack USB port.
+
+https://www.digikey.com/product-detail/en/assmann-wsw-components/AU-Y1008/AE1086-ND/278929
+
 Power
 =====
 
@@ -134,6 +141,13 @@ It is possible this will require some timing fiddling by elongating traces or us
 https://stackoverflow.com/a/45371994
 
 Microchip has some application notes that show PCB routing and chassis/signal ground plane layout.
+
+GigE Jack w/ magnetics
+----------------------
+
+Has a green/orange LED and a yellow LED.
+
+https://www.digikey.com/product-detail/en/bel-fuse-inc/L829-1J1T-43/380-1110-ND/1033376
 
 PHY
 ---
