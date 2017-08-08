@@ -3,8 +3,6 @@ TODO
 
 Parts to find:
 - Host management CPU
-- Temp sensors fo sho
-- SD Card slots
 - USB ports
 - GigE jacks / Eth magnetics
 - LEDs for Pis and switches
@@ -25,11 +23,21 @@ Pi CM3L
 
 Datasheet: https://www.raspberrypi.org/documentation/hardware/computemodule/RPI-CM-DATASHEET-V1_0.pdf
 
+UART
+----
+
 UART: GPIO pins 14 and 15; may need pi3-disable-bt option for raspian?
 There is a second shitty UART that is by default mapped to these pins, but we don't need bluetooth
 so we might as well map the good one to them instead.
 
+SPI/I2C UART: https://www.digikey.com/product-detail/en/nxp-usa-inc/SC16IS752IPW,112/568-4016-5-ND/1158199
+
 Decoupling caps may not be required -- design POC board with spaces for them and add if necessary.
+
+SD Card slot
+------------
+
+https://www.digikey.com/product-detail/en/molex-llc/1051620001/WM14405CT-ND/6133135
 
 Power
 =====
@@ -167,6 +175,14 @@ Atmel SAM4E family: https://www.digikey.com/product-detail/en/microchip-technolo
 
 Atmel SAME70 family: https://www.digikey.com/product-detail/en/microchip-technology/ATSAME70Q20A-AN/1611-ATSAME70Q20A-AN-ND/6829726
 (These are pin-compatible with the SAM4E chips so we can upgrade later if we need, maybe.)
+
+
+SPI demux
+---------
+To address > 4 SPI devices, we need to demux the chip select lines from the SAM4E.
+This 4:16 demux operates over 2-6 V so should be fine for 3.3V logic.
+
+https://www.digikey.com/product-detail/en/texas-instruments/CD74HC154M/296-9182-5-ND/376807
 
 
 Temp Sensors
