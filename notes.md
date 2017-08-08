@@ -30,7 +30,7 @@ UART: GPIO pins 14 and 15; may need pi3-disable-bt option for raspian?
 There is a second shitty UART that is by default mapped to these pins, but we don't need bluetooth
 so we might as well map the good one to them instead.
 
-SPI/I2C UART: https://www.digikey.com/product-detail/en/nxp-usa-inc/SC16IS752IPW,112/568-4016-5-ND/1158199
+Dual SPI/I2C UART: https://www.digikey.com/product-detail/en/nxp-usa-inc/SC16IS752IPW,112/568-4016-5-ND/1158199
 
 Decoupling caps may not be required -- design POC board with spaces for them and add if necessary.
 

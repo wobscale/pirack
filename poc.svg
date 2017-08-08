@@ -18,6 +18,13 @@
    sodipodi:docname="poc.svg">
   <defs
      id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 148.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="210 : 148.5 : 1"
+       inkscape:persp3d-origin="105 : 99 : 1"
+       id="perspective4622" />
     <marker
        inkscape:stockid="Arrow1Mstart"
        orient="auto"
@@ -74,6 +81,21 @@
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          transform="scale(0.8) translate(12.5,0)" />
     </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4752-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -82,9 +104,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="524.18103"
-     inkscape:cy="158.96511"
+     inkscape:zoom="1.0000001"
+     inkscape:cx="505.28416"
+     inkscape:cy="615.75098"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -403,16 +425,16 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="153.03954"
-       y="139.0437"
+       y="133.48744"
        id="text4667"><tspan
          sodipodi:role="line"
          id="tspan4665"
          x="153.03954"
-         y="139.0437"
+         y="133.48744"
          style="stroke-width:0.26458332px">RGMII</tspan><tspan
          sodipodi:role="line"
          x="153.03954"
-         y="146.09926"
+         y="140.543"
          style="stroke-width:0.26458332px"
          id="tspan4669">MAC to MAC</tspan></text>
     <path
@@ -596,43 +618,27 @@
          y="289.67984"
          style="stroke-width:0.26458332px"
          id="tspan5189">switches</tspan></text>
-    <path
-       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833328;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 57.149999,88.508334 V 161.53333 H 119.0625 V 217.625 h 20.10833 v 33.3375 H 146.05"
-       id="path5191"
-       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="124.77146"
-       y="284.46371"
-       id="text5197"><tspan
-         sodipodi:role="line"
-         id="tspan5195"
-         x="124.77146"
-         y="284.46371"
-         style="stroke-width:0.26458332px">UART</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="28.251162"
-       y="215.93828"
+       x="83.019905"
+       y="169.37161"
        id="text5197-8"><tspan
          sodipodi:role="line"
          id="tspan5195-3"
-         x="28.251162"
-         y="215.93828"
+         x="83.019905"
+         y="169.37161"
          style="stroke-width:0.26458332px">UART</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="40.02512"
-       y="95.817451"
+       x="54.312618"
+       y="93.700783"
        id="text5197-80"><tspan
          sodipodi:role="line"
          id="tspan5195-4"
-         x="40.02512"
-         y="95.817451"
+         x="54.312618"
+         y="93.700783"
          style="stroke-width:0.26458332px">UART</tspan></text>
     <text
        xml:space="preserve"
@@ -661,11 +667,6 @@
          x="5.2384825"
          y="94.599403"
          style="stroke-width:0.26458332px">SD_CLK</tspan></text>
-    <path
-       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833328;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 44.846874,208.95989 v 77.32449 h 96.405066 v -34.93402"
-       id="path5257"
-       inkscape:connector-curvature="0" />
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05799997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4621"
@@ -705,5 +706,43 @@
          x="121.57604"
          y="259.42917"
          style="stroke-width:0.26458332px">I2C</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05799997;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4662"
+       width="30.42708"
+       height="17.991667"
+       x="106.89166"
+       y="145.92291" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="110.06666"
+       y="153.06665"
+       id="text4666"><tspan
+         sodipodi:role="line"
+         id="tspan4664"
+         x="110.06666"
+         y="153.06665"
+         style="stroke-width:0.26458332px">2x UART</tspan><tspan
+         sodipodi:role="line"
+         x="110.06666"
+         y="160.12221"
+         style="stroke-width:0.26458332px"
+         id="tspan4668">to SPI</tspan></text>
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.02386022;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3)"
+       d="m 139.67931,154.91876 h 61.12643"
+       id="path4736-7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833328;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 79.374994,171.32292 V 160.73959 H 106.62708"
+       id="path5409"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833328;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 52.387497,88.772925 V 156.24167 H 106.62708"
+       id="path5411"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
