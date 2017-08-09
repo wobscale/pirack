@@ -170,17 +170,18 @@ Control/Management CPU
 
 Requirements
 ------------
-- Ethernet; preferably gigabit (?)
 - Hefty enough to run an httpd, so probably also loonix/BSD (maybe, maybe not)
-- I2C/Dallas 1-wire for talking to temp sensors &c
-- SPI for talking to Switch chips, preferably
-- Voltage monitoring (on all busses) & current monitoring (on 5V bus)
-- GPIOs per Pi:
+
+- Ethernet -- 18 IO pins (?)
+- I2C/Dallas 1-wire for talking to temp sensors &c -- 2 IO pins
+- SPI for talking to Switch chips and UARTs -- 7 IO pins
+- Voltage monitoring (on all busses) & current monitoring (on 5V bus) -- 4+ Analog IO pins
+- GPIOs per Pi: -- ~50 for 10 Pis
 	- 3 for switching power (5V (VBAT), 3V3, 1V8)
 	- 1 for RST
-	- 2? for UART
 	- 1 for enabling/disabling the SD card
 
+Σ = 81 IO pins
 
 Possible CPUs
 -------------
