@@ -180,8 +180,13 @@ Requirements
 	- 3 for switching power (5V (VBAT), 3V3, 1V8)
 	- 1 for RST
 	- 1 for enabling/disabling the SD card
+- JTAG: 4 IOs + JTAGSEL pin
+- ERASE pin
+- Fast Flash Programming: 27 IO pins (may be able to do with JTAG; may be multiplexable)
 
-Σ = 81 IO pins
+Σ = 86 IO pins (113 with fast flash)
+
+SAM4E has 117 IO pins (!!)
 
 Possible CPUs
 -------------
@@ -191,6 +196,9 @@ Atmel SAM4E family: https://www.digikey.com/product-detail/en/microchip-technolo
 Atmel SAME70 family: https://www.digikey.com/product-detail/en/microchip-technology/ATSAME70Q20A-AN/1611-ATSAME70Q20A-AN-ND/6829726
 (These are pin-compatible with the SAM4E chips so we can upgrade later if we need, maybe.)
 
+Flashing/Debugging: OpenOCD + one of these:
+- https://www.digikey.com/product-detail/en/olimex-ltd/ARM-USB-TINY-H/1188-1013-ND/3471388
+- https://www.digikey.com/products/en?keywords=ARM-USB-OCD-H (contains UART + 5V power)
 
 SPI demux
 ---------
