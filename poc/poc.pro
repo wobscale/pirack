@@ -1,4 +1,4 @@
-update=Mon 07 Aug 2017 09:37:40 PM CDT
+update=Sat 12 Aug 2017 04:14:03 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../components
@@ -61,3 +59,12 @@ LibName29=valves
 LibName30=/home/nathan/wob/pirack/components/cm3l
 LibName31=LAN9512
 LibName32=usb_a_x2
+LibName33=CD74HC154
+LibName34=sc16is752
+LibName35=KSZ9897R
+LibName36=belfuse_gige
+LibName37=SAM4E
+LibName38=DP83867
+LibName39=ds75
+[general]
+version=1
