@@ -43,7 +43,7 @@ EELAYER 25 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
-Sheet 2 3
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -2314,22 +2314,6 @@ F 3 "" H 2950 7800 50  0001 C CNN
 	1    2950 7800
 	1    0    0    -1  
 $EndComp
-Text Label 9300 10300 0    60   ~ 0
-USB_HOST_DP
-Wire Wire Line
-	9300 10300 10000 10300
-Text Label 9300 10400 0    60   ~ 0
-USB_HOST_DM
-Wire Wire Line
-	9300 10400 10000 10400
-Text Label 2250 12650 0    60   ~ 0
-USB_HOST_DP
-Wire Wire Line
-	2250 12550 2950 12550
-Text Label 2250 12550 0    60   ~ 0
-USB_HOST_DM
-Wire Wire Line
-	2250 12650 2950 12650
 Text Label 2250 12950 0    60   ~ 0
 VDDUSB18PLL
 Wire Wire Line
@@ -2348,4 +2332,20 @@ Wire Wire Line
 	6050 12950 6100 12950
 Text Label 7450 15250 0    60   ~ 0
 VDD33IO
+Wire Wire Line
+	2250 12650 2950 12650
+Text Label 2250 12550 0    60   ~ 0
+USB_HOST_DM
+Wire Wire Line
+	2250 12550 2950 12550
+Text Label 2250 12650 0    60   ~ 0
+USB_HOST_DP
+Wire Wire Line
+	9300 10400 10000 10400
+Text Label 9300 10400 0    60   ~ 0
+USB_HOST_DM
+Wire Wire Line
+	9300 10300 10000 10300
+Text Label 9300 10300 0    60   ~ 0
+USB_HOST_DP
 $EndSCHEMATC

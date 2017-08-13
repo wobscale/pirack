@@ -43,7 +43,7 @@ EELAYER 25 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -273,12 +273,6 @@ F 3 "" H 800 2300 50  0001 C CNN
 	1    800  2300
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 17850 1050 1450 1450
-U 598EEE5F
-F0 "top-pi" 60
-F1 "top-pi.sch" 60
-$EndSheet
 $Comp
 L SAM4E U?
 U 1 1 59906DC8
@@ -591,5 +585,11 @@ S 13200 1050 2450 1950
 U 5990AA8B
 F0 "switches" 60
 F1 "switches.sch" 60
+$EndSheet
+$Sheet
+S 17250 3650 1600 1400
+U 5992D94E
+F0 "Bank1" 60
+F1 "Bank1.sch" 60
 $EndSheet
 $EndSCHEMATC
