@@ -2727,4 +2727,34 @@ F 3 "" H 4150 11150 50  0001 C CNN
 $EndComp
 Text Notes 4450 10500 0    60   ~ 0
 Route GND nearby\nin case we want to disable
+$Comp
+L R R?
+U 1 1 5A57D5CF
+P 2800 11750
+F 0 "R?" V 2880 11750 50  0000 C CNN
+F 1 "12.4K 1%" V 2700 11700 50  0000 C CNN
+F 2 "" V 2730 11750 50  0001 C CNN
+F 3 "" H 2800 11750 50  0001 C CNN
+	1    2800 11750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A57D886
+P 2650 11750
+F 0 "#PWR?" H 2650 11500 50  0001 C CNN
+F 1 "GND" H 2650 11600 50  0000 C CNN
+F 2 "" H 2650 11750 50  0001 C CNN
+F 3 "" H 2650 11750 50  0001 C CNN
+	1    2650 11750
+	0    1    1    0   
+$EndComp
+Text HLabel 2950 11950 0    60   Input ~ 0
+RXP
+Text HLabel 2950 12050 0    60   Input ~ 0
+RXN
+Text HLabel 2950 12250 0    60   Input ~ 0
+TXP
+Text HLabel 2950 12350 0    60   Input ~ 0
+TXN
 $EndSCHEMATC
