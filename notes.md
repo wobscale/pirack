@@ -165,6 +165,10 @@ Connect to USB_DP, USB_DM
 
 https://www.digikey.com/product-detail/en/microchip-technology/LAN9512-JZX/638-1086-ND/2166038
 
+Needs a 25MHz crystal: (see LAN9512 datasheet for specs)
+
+https://www.digikey.com/product-detail/en/abracon-llc/ABLS2-25.000MHZ-2X-FT/535-13438-1-ND/5980114
+
 Control/Management CPU
 ======================
 
