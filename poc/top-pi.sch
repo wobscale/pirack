@@ -2667,28 +2667,6 @@ F 3 "" H 4750 13650 50  0001 C CNN
 	1    4750 13650
 	-1   0    0    1   
 $EndComp
-$Comp
-L R R?
-U 1 1 5A577F32
-P 4450 11000
-F 0 "R?" V 4530 11000 50  0000 C CNN
-F 1 "10k" V 4450 11000 50  0000 C CNN
-F 2 "" V 4380 11000 50  0001 C CNN
-F 3 "" H 4450 11000 50  0001 C CNN
-	1    4450 11000
-	-1   0    0    1   
-$EndComp
-$Comp
-L +3V3 #PWR?
-U 1 1 5A577F38
-P 4450 10850
-F 0 "#PWR?" H 4450 10700 50  0001 C CNN
-F 1 "+3V3" V 4450 11050 50  0000 C CNN
-F 2 "" H 4450 10850 50  0001 C CNN
-F 3 "" H 4450 10850 50  0001 C CNN
-	1    4450 10850
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4950 13650
 $Comp
 L GND #PWR?
@@ -2725,8 +2703,6 @@ F 3 "" H 4150 11150 50  0001 C CNN
 	1    4150 11150
 	-1   0    0    1   
 $EndComp
-Text Notes 4450 10500 0    60   ~ 0
-Route GND nearby\nin case we want to disable
 $Comp
 L R R?
 U 1 1 5A57D5CF
@@ -2757,4 +2733,15 @@ Text HLabel 2950 12250 0    60   Input ~ 0
 TXP
 Text HLabel 2950 12350 0    60   Input ~ 0
 TXN
+$Comp
+L GND #PWR?
+U 1 1 5A537556
+P 4450 11150
+F 0 "#PWR?" H 4450 10900 50  0001 C CNN
+F 1 "GND" H 4450 11000 50  0000 C CNN
+F 2 "" H 4450 11150 50  0001 C CNN
+F 3 "" H 4450 11150 50  0001 C CNN
+	1    4450 11150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
