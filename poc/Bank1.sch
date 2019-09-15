@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:cm3l
-LIBS:LAN9512
-LIBS:usb_a_x2
-LIBS:CD74HC154
-LIBS:sc16is752
-LIBS:KSZ9897R
-LIBS:belfuse_gige
-LIBS:SAM4E
-LIBS:DP83867
-LIBS:ds75
+EESchema Schematic File Version 4
 LIBS:poc-cache
-EELAYER 25 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -64,7 +25,7 @@ F4 "TXP" I L 7150 2550 60
 F5 "TXN" I L 7150 2650 60 
 $EndSheet
 $Comp
-L DS75 T?
+L ds75:DS75 T?
 U 1 1 59918763
 P 2600 2150
 F 0 "T?" H 3000 2100 60  0000 C CNN
@@ -75,7 +36,7 @@ F 3 "" H 2600 2150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SC16IS752 U?
+L sc16is752:SC16IS752 U?
 U 1 1 599187DB
 P 2550 3600
 F 0 "U?" H 3100 3450 60  0000 C CNN
@@ -86,7 +47,7 @@ F 3 "" H 2550 3600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR055
+L power:+3V3 #PWR055
 U 1 1 59918878
 P 3300 2350
 F 0 "#PWR055" H 3300 2200 50  0001 C CNN
@@ -97,7 +58,7 @@ F 3 "" H 3300 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR056
+L power:GND #PWR056
 U 1 1 599188CF
 P 2350 2650
 F 0 "#PWR056" H 2350 2400 50  0001 C CNN
@@ -108,7 +69,7 @@ F 3 "" H 2350 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR057
+L power:+3V3 #PWR057
 U 1 1 599188F9
 P 700 850
 F 0 "#PWR057" H 700 700 50  0001 C CNN
@@ -119,7 +80,7 @@ F 3 "" H 700 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR058
+L power:GND #PWR058
 U 1 1 59918954
 P 700 1050
 F 0 "#PWR058" H 700 800 50  0001 C CNN
@@ -130,7 +91,7 @@ F 3 "" H 700 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991896D
 P 900 950
 F 0 "C?" H 910 1020 50  0000 L CNN
@@ -141,7 +102,7 @@ F 3 "" H 900 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599189C2
 P 1200 950
 F 0 "C?" H 1210 1020 50  0000 L CNN
@@ -160,7 +121,7 @@ Connection ~ 900  1050
 Text Notes 900  800  0    60   ~ 0
 Place near\nDS75 VDD
 $Comp
-L GND #PWR059
+L power:GND #PWR059
 U 1 1 59918FD5
 P 2200 5200
 F 0 "#PWR059" H 2200 4950 50  0001 C CNN
@@ -171,7 +132,7 @@ F 3 "" H 2200 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR060
+L power:+3V3 #PWR060
 U 1 1 59919042
 P 2200 4600
 F 0 "#PWR060" H 2200 4450 50  0001 C CNN
@@ -182,7 +143,7 @@ F 3 "" H 2200 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3V3 #PWR061
+L power:+3V3 #PWR061
 U 1 1 59919149
 P 700 1600
 F 0 "#PWR061" H 700 1450 50  0001 C CNN
@@ -193,7 +154,7 @@ F 3 "" H 700 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR062
+L power:GND #PWR062
 U 1 1 5991914F
 P 700 1800
 F 0 "#PWR062" H 700 1550 50  0001 C CNN
@@ -204,7 +165,7 @@ F 3 "" H 700 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59919155
 P 900 1700
 F 0 "C?" H 910 1770 50  0000 L CNN
@@ -215,7 +176,7 @@ F 3 "" H 900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991915B
 P 1200 1700
 F 0 "C?" H 1210 1770 50  0000 L CNN

@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:cm3l
-LIBS:LAN9512
-LIBS:usb_a_x2
-LIBS:CD74HC154
-LIBS:sc16is752
-LIBS:KSZ9897R
-LIBS:belfuse_gige
-LIBS:SAM4E
-LIBS:DP83867
-LIBS:ds75
+EESchema Schematic File Version 4
 LIBS:poc-cache
-EELAYER 25 0
+EELAYER 30 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +1V8 #PWR063
+L power:+1V8 #PWR063
 U 1 1 59910779
 P 9850 11200
 F 0 "#PWR063" H 9850 11050 50  0001 C CNN
@@ -65,7 +26,7 @@ F 3 "" H 9850 11200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR064
+L power:GND #PWR064
 U 1 1 5991077F
 P 9900 1950
 F 0 "#PWR064" H 9900 1700 50  0001 C CNN
@@ -76,7 +37,7 @@ F 3 "" H 9900 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR065
+L power:+5V #PWR065
 U 1 1 59910785
 P 9850 11900
 F 0 "#PWR065" H 9850 11750 50  0001 C CNN
@@ -87,7 +48,7 @@ F 3 "" H 9850 11900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR066
+L power:+3V3 #PWR066
 U 1 1 5991078B
 P 9800 4100
 F 0 "#PWR066" H 9800 3950 50  0001 C CNN
@@ -98,7 +59,7 @@ F 3 "" H 9800 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR067
+L power:+3V3 #PWR067
 U 1 1 59910791
 P 9850 11600
 F 0 "#PWR067" H 9850 11450 50  0001 C CNN
@@ -109,7 +70,7 @@ F 3 "" H 9850 11600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR068
+L power:+3V3 #PWR068
 U 1 1 59910797
 P 12300 2100
 F 0 "#PWR068" H 12300 1950 50  0001 C CNN
@@ -122,7 +83,7 @@ $EndComp
 Text Notes 8850 4000 0    60   ~ 0
 One of these two might\nbe 1V8 instead?
 $Comp
-L GND #PWR069
+L power:GND #PWR069
 U 1 1 599107A2
 P 3550 13550
 F 0 "#PWR069" H 3550 13300 50  0001 C CNN
@@ -133,7 +94,7 @@ F 3 "" H 3550 13550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RPI_CM3L TopPi?
+L cm3l:RPI_CM3L TopPi?
 U 1 1 599107A8
 P 11050 7050
 F 0 "TopPi?" H 11050 1950 50  0000 C CNN
@@ -144,7 +105,7 @@ F 3 "" H 11050 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599107AF
 P 4750 15350
 F 0 "C?" H 4800 15400 50  0000 L CNN
@@ -155,7 +116,7 @@ F 3 "" H 4750 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LAN9512 U?
+L LAN9512:LAN9512 U?
 U 1 1 599107B6
 P 4500 12400
 F 0 "U?" H 4500 12300 50  0000 C CNN
@@ -166,7 +127,7 @@ F 3 "DOCUMENTATION" H 4500 12400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR070
+L power:+3V3 #PWR070
 U 1 1 599107BD
 P 4150 13650
 F 0 "#PWR070" H 4150 13500 50  0001 C CNN
@@ -177,7 +138,7 @@ F 3 "" H 4150 13650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR071
+L power:GND #PWR071
 U 1 1 599107C3
 P 4200 15450
 F 0 "#PWR071" H 4200 15200 50  0001 C CNN
@@ -214,7 +175,7 @@ Connection ~ 9950 4100
 Wire Wire Line
 	12300 2100 12100 2100
 $Comp
-L +3V3 #PWR072
+L power:+3V3 #PWR072
 U 1 1 599107D7
 P 4200 15250
 F 0 "#PWR072" H 4200 15100 50  0001 C CNN
@@ -227,7 +188,7 @@ $EndComp
 Text Notes 4400 15100 0    60   ~ 0
 Ferrite Bead
 $Comp
-L L_Core_Ferrite L?
+L poc-rescue:L_Core_Ferrite L?
 U 1 1 599107DE
 P 4550 15250
 F 0 "L?" V 4500 15250 50  0000 C CNN
@@ -238,7 +199,7 @@ F 3 "" H 4550 15250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599107E5
 P 5100 15350
 F 0 "C?" H 5150 15400 50  0000 L CNN
@@ -249,7 +210,7 @@ F 3 "" H 5100 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599107EC
 P 5450 15350
 F 0 "C?" H 5500 15400 50  0000 L CNN
@@ -260,7 +221,7 @@ F 3 "" H 5450 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599107F3
 P 5800 15350
 F 0 "C?" H 5850 15400 50  0000 L CNN
@@ -271,7 +232,7 @@ F 3 "" H 5800 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599107FA
 P 6150 15350
 F 0 "C?" H 6200 15400 50  0000 L CNN
@@ -282,7 +243,7 @@ F 3 "" H 6150 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910801
 P 6500 15350
 F 0 "C?" H 6550 15400 50  0000 L CNN
@@ -293,7 +254,7 @@ F 3 "" H 6500 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910808
 P 6850 15350
 F 0 "C?" H 6900 15400 50  0000 L CNN
@@ -304,7 +265,7 @@ F 3 "" H 6850 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991080F
 P 7200 15350
 F 0 "C?" H 7250 15400 50  0000 L CNN
@@ -336,7 +297,7 @@ Wire Wire Line
 	4400 15250 4200 15250
 Connection ~ 7200 15250
 $Comp
-L +3V3 #PWR073
+L power:+3V3 #PWR073
 U 1 1 5991082A
 P 4200 14600
 F 0 "#PWR073" H 4200 14450 50  0001 C CNN
@@ -347,7 +308,7 @@ F 3 "" H 4200 14600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR074
+L power:GND #PWR074
 U 1 1 59910830
 P 4200 14800
 F 0 "#PWR074" H 4200 14550 50  0001 C CNN
@@ -358,7 +319,7 @@ F 3 "" H 4200 14800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910836
 P 4700 14700
 F 0 "C?" H 4750 14750 50  0000 L CNN
@@ -369,7 +330,7 @@ F 3 "" H 4700 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991083D
 P 5050 14700
 F 0 "C?" H 5100 14750 50  0000 L CNN
@@ -380,7 +341,7 @@ F 3 "" H 5050 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910844
 P 5400 14700
 F 0 "C?" H 5450 14750 50  0000 L CNN
@@ -391,7 +352,7 @@ F 3 "" H 5400 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991084B
 P 5750 14700
 F 0 "C?" H 5800 14750 50  0000 L CNN
@@ -402,7 +363,7 @@ F 3 "" H 5750 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910852
 P 6100 14700
 F 0 "C?" H 6150 14750 50  0000 L CNN
@@ -425,7 +386,7 @@ Place near\nVDD33A
 Text Notes 7500 15550 0    60   ~ 0
 Place near\nVDD33IO
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910863
 P 4350 14700
 F 0 "C?" H 4400 14750 50  0000 L CNN
@@ -442,7 +403,7 @@ Wire Wire Line
 Connection ~ 4350 14600
 Connection ~ 4350 14800
 $Comp
-L +1V8 #PWR075
+L power:+1V8 #PWR075
 U 1 1 5991086E
 P 5150 13650
 F 0 "#PWR075" H 5150 13500 50  0001 C CNN
@@ -453,7 +414,7 @@ F 3 "" H 5150 13650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +1V8 #PWR076
+L power:+1V8 #PWR076
 U 1 1 59910874
 P 2950 14600
 F 0 "#PWR076" H 2950 14450 50  0001 C CNN
@@ -464,7 +425,7 @@ F 3 "" H 2950 14600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR077
+L power:GND #PWR077
 U 1 1 5991087A
 P 2950 14800
 F 0 "#PWR077" H 2950 14550 50  0001 C CNN
@@ -475,7 +436,7 @@ F 3 "" H 2950 14800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910880
 P 3050 14700
 F 0 "C?" H 3100 14750 50  0000 L CNN
@@ -486,7 +447,7 @@ F 3 "" H 3050 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910887
 P 3400 14700
 F 0 "C?" H 3450 14750 50  0000 L CNN
@@ -497,7 +458,7 @@ F 3 "" H 3400 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991088E
 P 3750 14700
 F 0 "C?" H 3800 14750 50  0000 L CNN
@@ -518,7 +479,7 @@ Connection ~ 3050 14800
 Text Notes 3450 14550 0    60   ~ 0
 Place near\nVDD18CORE
 $Comp
-L L_Core_Ferrite L?
+L poc-rescue:L_Core_Ferrite L?
 U 1 1 599108A0
 P 2950 15350
 F 0 "L?" H 2900 15350 50  0000 C CNN
@@ -529,7 +490,7 @@ F 3 "" H 2950 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108A7
 P 3250 15200
 F 0 "C?" V 3200 15050 50  0000 L CNN
@@ -540,7 +501,7 @@ F 3 "" H 3250 15200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108AE
 P 3250 15500
 F 0 "C?" V 3300 15350 50  0000 L CNN
@@ -551,7 +512,7 @@ F 3 "" H 3250 15500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR078
+L power:GND #PWR078
 U 1 1 599108B5
 P 3550 15200
 F 0 "#PWR078" H 3550 14950 50  0001 C CNN
@@ -562,7 +523,7 @@ F 3 "" H 3550 15200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR079
+L power:GND #PWR079
 U 1 1 599108BB
 P 3550 15500
 F 0 "#PWR079" H 3550 15250 50  0001 C CNN
@@ -583,7 +544,7 @@ Connection ~ 2950 15500
 Wire Wire Line
 	3350 15500 3550 15500
 $Comp
-L +3V3 #PWR080
+L power:+3V3 #PWR080
 U 1 1 599108C7
 P 6550 2100
 F 0 "#PWR080" H 6550 1950 50  0001 C CNN
@@ -594,7 +555,7 @@ F 3 "" H 6550 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR081
+L power:GND #PWR081
 U 1 1 599108CD
 P 6550 2300
 F 0 "#PWR081" H 6550 2050 50  0001 C CNN
@@ -605,7 +566,7 @@ F 3 "" H 6550 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108D3
 P 6700 2200
 F 0 "C?" H 6750 2250 50  0000 L CNN
@@ -616,7 +577,7 @@ F 3 "" H 6700 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108DA
 P 7050 2200
 F 0 "C?" H 7100 2250 50  0000 L CNN
@@ -627,7 +588,7 @@ F 3 "" H 7050 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108E1
 P 7400 2200
 F 0 "C?" H 7450 2250 50  0000 L CNN
@@ -648,7 +609,7 @@ Connection ~ 7050 2100
 Text Notes 7000 2050 0    60   ~ 0
 Place near\nSDX_VDD
 $Comp
-L +3V3 #PWR082
+L power:+3V3 #PWR082
 U 1 1 599108EF
 P 6550 2750
 F 0 "#PWR082" H 6550 2600 50  0001 C CNN
@@ -659,7 +620,7 @@ F 3 "" H 6550 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR083
+L power:GND #PWR083
 U 1 1 599108F5
 P 6550 2950
 F 0 "#PWR083" H 6550 2700 50  0001 C CNN
@@ -670,7 +631,7 @@ F 3 "" H 6550 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599108FB
 P 6700 2850
 F 0 "C?" H 6750 2900 50  0000 L CNN
@@ -681,7 +642,7 @@ F 3 "" H 6700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910902
 P 7050 2850
 F 0 "C?" H 7100 2900 50  0000 L CNN
@@ -692,7 +653,7 @@ F 3 "" H 7050 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910909
 P 7400 2850
 F 0 "C?" H 7450 2900 50  0000 L CNN
@@ -713,7 +674,7 @@ Connection ~ 7050 2750
 Text Notes 7000 2700 0    60   ~ 0
 Place near\nGPIO0-27_VDD
 $Comp
-L +3V3 #PWR084
+L power:+3V3 #PWR084
 U 1 1 59910917
 P 6550 3400
 F 0 "#PWR084" H 6550 3250 50  0001 C CNN
@@ -724,7 +685,7 @@ F 3 "" H 6550 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR085
+L power:GND #PWR085
 U 1 1 5991091D
 P 6550 3600
 F 0 "#PWR085" H 6550 3350 50  0001 C CNN
@@ -735,7 +696,7 @@ F 3 "" H 6550 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910923
 P 6700 3500
 F 0 "C?" H 6750 3550 50  0000 L CNN
@@ -746,7 +707,7 @@ F 3 "" H 6700 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991092A
 P 7050 3500
 F 0 "C?" H 7100 3550 50  0000 L CNN
@@ -757,7 +718,7 @@ F 3 "" H 7050 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910931
 P 7400 3500
 F 0 "C?" H 7450 3550 50  0000 L CNN
@@ -778,7 +739,7 @@ Connection ~ 7050 3400
 Text Notes 7000 3350 0    60   ~ 0
 Place near\nGPIO28-45_VDD
 $Comp
-L +3V3 #PWR086
+L power:+3V3 #PWR086
 U 1 1 5991093F
 P 6550 4100
 F 0 "#PWR086" H 6550 3950 50  0001 C CNN
@@ -789,7 +750,7 @@ F 3 "" H 6550 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR087
+L power:GND #PWR087
 U 1 1 59910945
 P 6550 4300
 F 0 "#PWR087" H 6550 4050 50  0001 C CNN
@@ -800,7 +761,7 @@ F 3 "" H 6550 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991094B
 P 6700 4200
 F 0 "C?" H 6750 4250 50  0000 L CNN
@@ -811,7 +772,7 @@ F 3 "" H 6700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910952
 P 7050 4200
 F 0 "C?" H 7100 4250 50  0000 L CNN
@@ -822,7 +783,7 @@ F 3 "" H 7050 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910959
 P 7400 4200
 F 0 "C?" H 7450 4250 50  0000 L CNN
@@ -843,7 +804,7 @@ Connection ~ 7050 4100
 Text Notes 7000 4050 0    60   ~ 0
 Place near\n3V3
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910967
 P 7750 4200
 F 0 "C?" H 7800 4250 50  0000 L CNN
@@ -854,7 +815,7 @@ F 3 "" H 7750 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991096E
 P 8100 4200
 F 0 "C?" H 8150 4250 50  0000 L CNN
@@ -869,7 +830,7 @@ Connection ~ 7750 4100
 Connection ~ 7400 4300
 Connection ~ 7750 4300
 $Comp
-L GND #PWR088
+L power:GND #PWR088
 U 1 1 59910979
 P 6550 4950
 F 0 "#PWR088" H 6550 4700 50  0001 C CNN
@@ -880,7 +841,7 @@ F 3 "" H 6550 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991097F
 P 6700 4850
 F 0 "C?" H 6750 4900 50  0000 L CNN
@@ -891,7 +852,7 @@ F 3 "" H 6700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910986
 P 7050 4850
 F 0 "C?" H 7100 4900 50  0000 L CNN
@@ -902,7 +863,7 @@ F 3 "" H 7050 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991098D
 P 7400 4850
 F 0 "C?" H 7450 4900 50  0000 L CNN
@@ -923,7 +884,7 @@ Connection ~ 7050 4750
 Text Notes 7000 4700 0    60   ~ 0
 Place near\n1V8
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5991099B
 P 7750 4850
 F 0 "C?" H 7800 4900 50  0000 L CNN
@@ -934,7 +895,7 @@ F 3 "" H 7750 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109A2
 P 8100 4850
 F 0 "C?" H 8150 4900 50  0000 L CNN
@@ -949,7 +910,7 @@ Connection ~ 7750 4750
 Connection ~ 7400 4950
 Connection ~ 7750 4950
 $Comp
-L +1V8 #PWR089
+L power:+1V8 #PWR089
 U 1 1 599109AD
 P 6550 4750
 F 0 "#PWR089" H 6550 4600 50  0001 C CNN
@@ -960,7 +921,7 @@ F 3 "" H 6550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR090
+L power:GND #PWR090
 U 1 1 599109B3
 P 6550 5650
 F 0 "#PWR090" H 6550 5400 50  0001 C CNN
@@ -971,7 +932,7 @@ F 3 "" H 6550 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109B9
 P 6700 5550
 F 0 "C?" H 6750 5600 50  0000 L CNN
@@ -982,7 +943,7 @@ F 3 "" H 6700 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109C0
 P 7050 5550
 F 0 "C?" H 7100 5600 50  0000 L CNN
@@ -993,7 +954,7 @@ F 3 "" H 7050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109C7
 P 7400 5550
 F 0 "C?" H 7450 5600 50  0000 L CNN
@@ -1014,7 +975,7 @@ Connection ~ 7050 5450
 Text Notes 7000 5400 0    60   ~ 0
 Place near\nVBAT
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109D5
 P 7750 5550
 F 0 "C?" H 7800 5600 50  0000 L CNN
@@ -1025,7 +986,7 @@ F 3 "" H 7750 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599109DC
 P 8100 5550
 F 0 "C?" H 8150 5600 50  0000 L CNN
@@ -1040,7 +1001,7 @@ Connection ~ 7750 5450
 Connection ~ 7400 5650
 Connection ~ 7750 5650
 $Comp
-L +5V #PWR091
+L power:+5V #PWR091
 U 1 1 599109E7
 P 6550 5450
 F 0 "#PWR091" H 6550 5300 50  0001 C CNN
@@ -1055,7 +1016,7 @@ LAN9512 Power
 Text Notes 6200 1600 0    60   ~ 0
 CM3L Power
 $Comp
-L Micro_SD_Card J?
+L poc-rescue:Micro_SD_Card J?
 U 1 1 599109EF
 P 15050 2350
 F 0 "J?" H 14400 2950 50  0000 C CNN
@@ -1066,7 +1027,7 @@ F 3 "" H 15050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR092
+L power:GND #PWR092
 U 1 1 599109F6
 P 15850 2950
 F 0 "#PWR092" H 15850 2700 50  0001 C CNN
@@ -1077,7 +1038,7 @@ F 3 "" H 15850 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR093
+L power:GND #PWR093
 U 1 1 599109FC
 P 14150 2550
 F 0 "#PWR093" H 14150 2300 50  0001 C CNN
@@ -1088,7 +1049,7 @@ F 3 "" H 14150 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910A02
 P 15400 1350
 F 0 "C?" H 15450 1400 50  0000 L CNN
@@ -1099,7 +1060,7 @@ F 3 "" H 15400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910A09
 P 15050 1350
 F 0 "C?" H 15100 1400 50  0000 L CNN
@@ -1110,7 +1071,7 @@ F 3 "" H 15050 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR094
+L power:+3V3 #PWR094
 U 1 1 59910A10
 P 14850 1250
 F 0 "#PWR094" H 14850 1100 50  0001 C CNN
@@ -1121,7 +1082,7 @@ F 3 "" H 14850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR095
+L power:GND #PWR095
 U 1 1 59910A16
 P 14850 1450
 F 0 "#PWR095" H 14850 1200 50  0001 C CNN
@@ -1138,7 +1099,7 @@ Wire Wire Line
 Connection ~ 15050 1250
 Connection ~ 15050 1450
 $Comp
-L +3V3 #PWR096
+L power:+3V3 #PWR096
 U 1 1 59910A20
 P 14150 2350
 F 0 "#PWR096" H 14150 2200 50  0001 C CNN
@@ -1151,7 +1112,7 @@ $EndComp
 Text Notes 15100 1200 0    60   ~ 0
 Place near\nuSD VDD
 $Comp
-L USB_A_x2 J?
+L usb_a_x2:USB_A_x2 J?
 U 1 1 59910A27
 P 3100 8850
 F 0 "J?" H 2900 9300 50  0000 L CNN
@@ -1162,7 +1123,7 @@ F 3 "" H 3250 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR097
+L power:Earth #PWR097
 U 1 1 59910A2E
 P 3000 9500
 F 0 "#PWR097" H 3000 9250 50  0001 C CNN
@@ -1173,7 +1134,7 @@ F 3 "" H 3000 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR098
+L power:GND #PWR098
 U 1 1 59910A34
 P 3100 9500
 F 0 "#PWR098" H 3100 9250 50  0001 C CNN
@@ -1184,7 +1145,7 @@ F 3 "" H 3100 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR099
+L power:+5V #PWR099
 U 1 1 59910A3A
 P 3400 8650
 F 0 "#PWR099" H 3400 8500 50  0001 C CNN
@@ -1195,7 +1156,7 @@ F 3 "" H 3400 8650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR0100
+L power:GND #PWR0100
 U 1 1 59910A40
 P 2950 8000
 F 0 "#PWR0100" H 2950 7750 50  0001 C CNN
@@ -1206,7 +1167,7 @@ F 3 "" H 2950 8000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910A46
 P 3100 7900
 F 0 "C?" H 3150 7950 50  0000 L CNN
@@ -1217,7 +1178,7 @@ F 3 "" H 3100 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910A4D
 P 3450 7900
 F 0 "C?" H 3500 7950 50  0000 L CNN
@@ -1228,7 +1189,7 @@ F 3 "" H 3450 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910A54
 P 3800 7900
 F 0 "C?" H 3850 7950 50  0000 L CNN
@@ -1247,7 +1208,7 @@ Place near\nVBUS
 Connection ~ 3800 7800
 Connection ~ 3800 8000
 $Comp
-L +5V #PWR0101
+L power:+5V #PWR0101
 U 1 1 59910A62
 P 2950 7800
 F 0 "#PWR0101" H 2950 7650 50  0001 C CNN
@@ -1262,7 +1223,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 8000 3800 8000
 $Comp
-L +1V8 #PWR0102
+L power:+1V8 #PWR0102
 U 1 1 59910A6A
 P 9850 11200
 F 0 "#PWR0102" H 9850 11050 50  0001 C CNN
@@ -1273,7 +1234,7 @@ F 3 "" H 9850 11200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0103
+L power:GND #PWR0103
 U 1 1 59910A70
 P 9900 1950
 F 0 "#PWR0103" H 9900 1700 50  0001 C CNN
@@ -1284,7 +1245,7 @@ F 3 "" H 9900 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5V #PWR0104
+L power:+5V #PWR0104
 U 1 1 59910A76
 P 9850 11900
 F 0 "#PWR0104" H 9850 11750 50  0001 C CNN
@@ -1295,7 +1256,7 @@ F 3 "" H 9850 11900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0105
+L power:+3V3 #PWR0105
 U 1 1 59910A7C
 P 9800 4100
 F 0 "#PWR0105" H 9800 3950 50  0001 C CNN
@@ -1306,7 +1267,7 @@ F 3 "" H 9800 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0106
+L power:+3V3 #PWR0106
 U 1 1 59910A82
 P 9850 11600
 F 0 "#PWR0106" H 9850 11450 50  0001 C CNN
@@ -1317,7 +1278,7 @@ F 3 "" H 9850 11600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0107
+L power:+3V3 #PWR0107
 U 1 1 59910A88
 P 12300 2100
 F 0 "#PWR0107" H 12300 1950 50  0001 C CNN
@@ -1330,7 +1291,7 @@ $EndComp
 Text Notes 8850 4000 0    60   ~ 0
 One of these two might\nbe 1V8 instead?
 $Comp
-L GND #PWR0108
+L power:GND #PWR0108
 U 1 1 59910A93
 P 3550 13550
 F 0 "#PWR0108" H 3550 13300 50  0001 C CNN
@@ -1341,7 +1302,7 @@ F 3 "" H 3550 13550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RPI_CM3L TopPi?
+L cm3l:RPI_CM3L TopPi?
 U 1 1 59910A99
 P 11050 7050
 F 0 "TopPi?" H 11050 1950 50  0000 C CNN
@@ -1352,7 +1313,7 @@ F 3 "" H 11050 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AA0
 P 4750 15350
 F 0 "C?" H 4800 15400 50  0000 L CNN
@@ -1363,7 +1324,7 @@ F 3 "" H 4750 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LAN9512 U?
+L LAN9512:LAN9512 U?
 U 1 1 59910AA7
 P 4500 12400
 F 0 "U?" H 4500 12300 50  0000 C CNN
@@ -1374,7 +1335,7 @@ F 3 "DOCUMENTATION" H 4500 12400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0109
+L power:GND #PWR0109
 U 1 1 59910AB4
 P 4200 15450
 F 0 "#PWR0109" H 4200 15200 50  0001 C CNN
@@ -1385,7 +1346,7 @@ F 3 "" H 4200 15450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0110
+L power:+3V3 #PWR0110
 U 1 1 59910ABA
 P 4200 15250
 F 0 "#PWR0110" H 4200 15100 50  0001 C CNN
@@ -1398,7 +1359,7 @@ $EndComp
 Text Notes 4400 15100 0    60   ~ 0
 Ferrite Bead
 $Comp
-L L_Core_Ferrite L?
+L poc-rescue:L_Core_Ferrite L?
 U 1 1 59910AC1
 P 4550 15250
 F 0 "L?" V 4500 15250 50  0000 C CNN
@@ -1409,7 +1370,7 @@ F 3 "" H 4550 15250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AC8
 P 5100 15350
 F 0 "C?" H 5150 15400 50  0000 L CNN
@@ -1420,7 +1381,7 @@ F 3 "" H 5100 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910ACF
 P 5450 15350
 F 0 "C?" H 5500 15400 50  0000 L CNN
@@ -1431,7 +1392,7 @@ F 3 "" H 5450 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AD6
 P 5800 15350
 F 0 "C?" H 5850 15400 50  0000 L CNN
@@ -1442,7 +1403,7 @@ F 3 "" H 5800 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910ADD
 P 6150 15350
 F 0 "C?" H 6200 15400 50  0000 L CNN
@@ -1453,7 +1414,7 @@ F 3 "" H 6150 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AE4
 P 6500 15350
 F 0 "C?" H 6550 15400 50  0000 L CNN
@@ -1464,7 +1425,7 @@ F 3 "" H 6500 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AEB
 P 6850 15350
 F 0 "C?" H 6900 15400 50  0000 L CNN
@@ -1475,7 +1436,7 @@ F 3 "" H 6850 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910AF2
 P 7200 15350
 F 0 "C?" H 7250 15400 50  0000 L CNN
@@ -1486,7 +1447,7 @@ F 3 "" H 7200 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0111
+L power:+3V3 #PWR0111
 U 1 1 59910AFB
 P 4200 14600
 F 0 "#PWR0111" H 4200 14450 50  0001 C CNN
@@ -1497,7 +1458,7 @@ F 3 "" H 4200 14600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0112
+L power:GND #PWR0112
 U 1 1 59910B01
 P 4200 14800
 F 0 "#PWR0112" H 4200 14550 50  0001 C CNN
@@ -1508,7 +1469,7 @@ F 3 "" H 4200 14800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B07
 P 4700 14700
 F 0 "C?" H 4750 14750 50  0000 L CNN
@@ -1519,7 +1480,7 @@ F 3 "" H 4700 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B0E
 P 5050 14700
 F 0 "C?" H 5100 14750 50  0000 L CNN
@@ -1530,7 +1491,7 @@ F 3 "" H 5050 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B15
 P 5400 14700
 F 0 "C?" H 5450 14750 50  0000 L CNN
@@ -1541,7 +1502,7 @@ F 3 "" H 5400 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B1C
 P 5750 14700
 F 0 "C?" H 5800 14750 50  0000 L CNN
@@ -1552,7 +1513,7 @@ F 3 "" H 5750 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B23
 P 6100 14700
 F 0 "C?" H 6150 14750 50  0000 L CNN
@@ -1567,7 +1528,7 @@ Place near\nVDD33A
 Text Notes 7500 15550 0    60   ~ 0
 Place near\nVDD33IO
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B2C
 P 4350 14700
 F 0 "C?" H 4400 14750 50  0000 L CNN
@@ -1578,7 +1539,7 @@ F 3 "" H 4350 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR0113
+L power:+1V8 #PWR0113
 U 1 1 59910B33
 P 5150 13650
 F 0 "#PWR0113" H 5150 13500 50  0001 C CNN
@@ -1589,7 +1550,7 @@ F 3 "" H 5150 13650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +1V8 #PWR0114
+L power:+1V8 #PWR0114
 U 1 1 59910B39
 P 2950 14600
 F 0 "#PWR0114" H 2950 14450 50  0001 C CNN
@@ -1600,7 +1561,7 @@ F 3 "" H 2950 14600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0115
+L power:GND #PWR0115
 U 1 1 59910B3F
 P 2950 14800
 F 0 "#PWR0115" H 2950 14550 50  0001 C CNN
@@ -1611,7 +1572,7 @@ F 3 "" H 2950 14800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B45
 P 3050 14700
 F 0 "C?" H 3100 14750 50  0000 L CNN
@@ -1622,7 +1583,7 @@ F 3 "" H 3050 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B4C
 P 3400 14700
 F 0 "C?" H 3450 14750 50  0000 L CNN
@@ -1633,7 +1594,7 @@ F 3 "" H 3400 14700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B53
 P 3750 14700
 F 0 "C?" H 3800 14750 50  0000 L CNN
@@ -1646,7 +1607,7 @@ $EndComp
 Text Notes 3450 14550 0    60   ~ 0
 Place near\nVDD18CORE
 $Comp
-L L_Core_Ferrite L?
+L poc-rescue:L_Core_Ferrite L?
 U 1 1 59910B5F
 P 2950 15350
 F 0 "L?" H 2900 15350 50  0000 C CNN
@@ -1657,7 +1618,7 @@ F 3 "" H 2950 15350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B66
 P 3250 15200
 F 0 "C?" V 3200 15050 50  0000 L CNN
@@ -1668,7 +1629,7 @@ F 3 "" H 3250 15200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B6D
 P 3250 15500
 F 0 "C?" V 3300 15350 50  0000 L CNN
@@ -1679,7 +1640,7 @@ F 3 "" H 3250 15500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR0116
+L power:GND #PWR0116
 U 1 1 59910B74
 P 3550 15200
 F 0 "#PWR0116" H 3550 14950 50  0001 C CNN
@@ -1690,7 +1651,7 @@ F 3 "" H 3550 15200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR0117
+L power:GND #PWR0117
 U 1 1 59910B7A
 P 3550 15500
 F 0 "#PWR0117" H 3550 15250 50  0001 C CNN
@@ -1701,7 +1662,7 @@ F 3 "" H 3550 15500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3V3 #PWR0118
+L power:+3V3 #PWR0118
 U 1 1 59910B80
 P 6550 2100
 F 0 "#PWR0118" H 6550 1950 50  0001 C CNN
@@ -1712,7 +1673,7 @@ F 3 "" H 6550 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0119
+L power:GND #PWR0119
 U 1 1 59910B86
 P 6550 2300
 F 0 "#PWR0119" H 6550 2050 50  0001 C CNN
@@ -1723,7 +1684,7 @@ F 3 "" H 6550 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B8C
 P 6700 2200
 F 0 "C?" H 6750 2250 50  0000 L CNN
@@ -1734,7 +1695,7 @@ F 3 "" H 6700 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B93
 P 7050 2200
 F 0 "C?" H 7100 2250 50  0000 L CNN
@@ -1745,7 +1706,7 @@ F 3 "" H 7050 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910B9A
 P 7400 2200
 F 0 "C?" H 7450 2250 50  0000 L CNN
@@ -1758,7 +1719,7 @@ $EndComp
 Text Notes 7000 2050 0    60   ~ 0
 Place near\nSDX_VDD
 $Comp
-L +3V3 #PWR0120
+L power:+3V3 #PWR0120
 U 1 1 59910BA2
 P 6550 2750
 F 0 "#PWR0120" H 6550 2600 50  0001 C CNN
@@ -1769,7 +1730,7 @@ F 3 "" H 6550 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0121
+L power:GND #PWR0121
 U 1 1 59910BA8
 P 6550 2950
 F 0 "#PWR0121" H 6550 2700 50  0001 C CNN
@@ -1780,7 +1741,7 @@ F 3 "" H 6550 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BAE
 P 6700 2850
 F 0 "C?" H 6750 2900 50  0000 L CNN
@@ -1791,7 +1752,7 @@ F 3 "" H 6700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BB5
 P 7050 2850
 F 0 "C?" H 7100 2900 50  0000 L CNN
@@ -1802,7 +1763,7 @@ F 3 "" H 7050 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BBC
 P 7400 2850
 F 0 "C?" H 7450 2900 50  0000 L CNN
@@ -1815,7 +1776,7 @@ $EndComp
 Text Notes 7000 2700 0    60   ~ 0
 Place near\nGPIO0-27_VDD
 $Comp
-L +3V3 #PWR0122
+L power:+3V3 #PWR0122
 U 1 1 59910BC4
 P 6550 3400
 F 0 "#PWR0122" H 6550 3250 50  0001 C CNN
@@ -1826,7 +1787,7 @@ F 3 "" H 6550 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0123
+L power:GND #PWR0123
 U 1 1 59910BCA
 P 6550 3600
 F 0 "#PWR0123" H 6550 3350 50  0001 C CNN
@@ -1837,7 +1798,7 @@ F 3 "" H 6550 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BD0
 P 6700 3500
 F 0 "C?" H 6750 3550 50  0000 L CNN
@@ -1848,7 +1809,7 @@ F 3 "" H 6700 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BD7
 P 7050 3500
 F 0 "C?" H 7100 3550 50  0000 L CNN
@@ -1859,7 +1820,7 @@ F 3 "" H 7050 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BDE
 P 7400 3500
 F 0 "C?" H 7450 3550 50  0000 L CNN
@@ -1872,7 +1833,7 @@ $EndComp
 Text Notes 7000 3350 0    60   ~ 0
 Place near\nGPIO28-45_VDD
 $Comp
-L +3V3 #PWR0124
+L power:+3V3 #PWR0124
 U 1 1 59910BE6
 P 6550 4100
 F 0 "#PWR0124" H 6550 3950 50  0001 C CNN
@@ -1883,7 +1844,7 @@ F 3 "" H 6550 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0125
+L power:GND #PWR0125
 U 1 1 59910BEC
 P 6550 4300
 F 0 "#PWR0125" H 6550 4050 50  0001 C CNN
@@ -1894,7 +1855,7 @@ F 3 "" H 6550 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BF2
 P 6700 4200
 F 0 "C?" H 6750 4250 50  0000 L CNN
@@ -1905,7 +1866,7 @@ F 3 "" H 6700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910BF9
 P 7050 4200
 F 0 "C?" H 7100 4250 50  0000 L CNN
@@ -1916,7 +1877,7 @@ F 3 "" H 7050 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C00
 P 7400 4200
 F 0 "C?" H 7450 4250 50  0000 L CNN
@@ -1929,7 +1890,7 @@ $EndComp
 Text Notes 7000 4050 0    60   ~ 0
 Place near\n3V3
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C08
 P 7750 4200
 F 0 "C?" H 7800 4250 50  0000 L CNN
@@ -1940,7 +1901,7 @@ F 3 "" H 7750 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C0F
 P 8100 4200
 F 0 "C?" H 8150 4250 50  0000 L CNN
@@ -1951,7 +1912,7 @@ F 3 "" H 8100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0126
+L power:GND #PWR0126
 U 1 1 59910C16
 P 6550 4950
 F 0 "#PWR0126" H 6550 4700 50  0001 C CNN
@@ -1962,7 +1923,7 @@ F 3 "" H 6550 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C1C
 P 6700 4850
 F 0 "C?" H 6750 4900 50  0000 L CNN
@@ -1973,7 +1934,7 @@ F 3 "" H 6700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C23
 P 7050 4850
 F 0 "C?" H 7100 4900 50  0000 L CNN
@@ -1984,7 +1945,7 @@ F 3 "" H 7050 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C2A
 P 7400 4850
 F 0 "C?" H 7450 4900 50  0000 L CNN
@@ -1997,7 +1958,7 @@ $EndComp
 Text Notes 7000 4700 0    60   ~ 0
 Place near\n1V8
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C32
 P 7750 4850
 F 0 "C?" H 7800 4900 50  0000 L CNN
@@ -2008,7 +1969,7 @@ F 3 "" H 7750 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C39
 P 8100 4850
 F 0 "C?" H 8150 4900 50  0000 L CNN
@@ -2019,7 +1980,7 @@ F 3 "" H 8100 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +1V8 #PWR0127
+L power:+1V8 #PWR0127
 U 1 1 59910C40
 P 6550 4750
 F 0 "#PWR0127" H 6550 4600 50  0001 C CNN
@@ -2030,7 +1991,7 @@ F 3 "" H 6550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0128
+L power:GND #PWR0128
 U 1 1 59910C46
 P 6550 5650
 F 0 "#PWR0128" H 6550 5400 50  0001 C CNN
@@ -2041,7 +2002,7 @@ F 3 "" H 6550 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C4C
 P 6700 5550
 F 0 "C?" H 6750 5600 50  0000 L CNN
@@ -2052,7 +2013,7 @@ F 3 "" H 6700 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C53
 P 7050 5550
 F 0 "C?" H 7100 5600 50  0000 L CNN
@@ -2063,7 +2024,7 @@ F 3 "" H 7050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C5A
 P 7400 5550
 F 0 "C?" H 7450 5600 50  0000 L CNN
@@ -2076,7 +2037,7 @@ $EndComp
 Text Notes 7000 5400 0    60   ~ 0
 Place near\nVBAT
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C62
 P 7750 5550
 F 0 "C?" H 7800 5600 50  0000 L CNN
@@ -2087,7 +2048,7 @@ F 3 "" H 7750 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C69
 P 8100 5550
 F 0 "C?" H 8150 5600 50  0000 L CNN
@@ -2098,7 +2059,7 @@ F 3 "" H 8100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0129
+L power:+5V #PWR0129
 U 1 1 59910C70
 P 6550 5450
 F 0 "#PWR0129" H 6550 5300 50  0001 C CNN
@@ -2113,7 +2074,7 @@ LAN9512 Power
 Text Notes 6200 1600 0    60   ~ 0
 CM3L Power
 $Comp
-L Micro_SD_Card J?
+L poc-rescue:Micro_SD_Card J?
 U 1 1 59910C78
 P 15050 2350
 F 0 "J?" H 14400 2950 50  0000 C CNN
@@ -2124,7 +2085,7 @@ F 3 "" H 15050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0130
+L power:GND #PWR0130
 U 1 1 59910C7F
 P 15850 2950
 F 0 "#PWR0130" H 15850 2700 50  0001 C CNN
@@ -2135,7 +2096,7 @@ F 3 "" H 15850 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR0131
+L power:GND #PWR0131
 U 1 1 59910C85
 P 14150 2550
 F 0 "#PWR0131" H 14150 2300 50  0001 C CNN
@@ -2146,7 +2107,7 @@ F 3 "" H 14150 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C8B
 P 15400 1350
 F 0 "C?" H 15450 1400 50  0000 L CNN
@@ -2157,7 +2118,7 @@ F 3 "" H 15400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910C92
 P 15050 1350
 F 0 "C?" H 15100 1400 50  0000 L CNN
@@ -2168,7 +2129,7 @@ F 3 "" H 15050 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0132
+L power:+3V3 #PWR0132
 U 1 1 59910C99
 P 14850 1250
 F 0 "#PWR0132" H 14850 1100 50  0001 C CNN
@@ -2179,7 +2140,7 @@ F 3 "" H 14850 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0133
+L power:GND #PWR0133
 U 1 1 59910C9F
 P 14850 1450
 F 0 "#PWR0133" H 14850 1200 50  0001 C CNN
@@ -2190,7 +2151,7 @@ F 3 "" H 14850 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR0134
+L power:+3V3 #PWR0134
 U 1 1 59910CA5
 P 14150 2350
 F 0 "#PWR0134" H 14150 2200 50  0001 C CNN
@@ -2203,7 +2164,7 @@ $EndComp
 Text Notes 15100 1200 0    60   ~ 0
 Place near\nuSD VDD
 $Comp
-L USB_A_x2 J?
+L usb_a_x2:USB_A_x2 J?
 U 1 1 59910CAC
 P 3100 8850
 F 0 "J?" H 2900 9300 50  0000 L CNN
@@ -2214,7 +2175,7 @@ F 3 "" H 3250 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR0135
+L power:Earth #PWR0135
 U 1 1 59910CB3
 P 3000 9500
 F 0 "#PWR0135" H 3000 9250 50  0001 C CNN
@@ -2225,7 +2186,7 @@ F 3 "" H 3000 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0136
+L power:GND #PWR0136
 U 1 1 59910CB9
 P 3100 9500
 F 0 "#PWR0136" H 3100 9250 50  0001 C CNN
@@ -2236,7 +2197,7 @@ F 3 "" H 3100 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0137
+L power:+5V #PWR0137
 U 1 1 59910CBF
 P 3400 8650
 F 0 "#PWR0137" H 3400 8500 50  0001 C CNN
@@ -2247,7 +2208,7 @@ F 3 "" H 3400 8650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR0138
+L power:GND #PWR0138
 U 1 1 59910CC5
 P 2950 8000
 F 0 "#PWR0138" H 2950 7750 50  0001 C CNN
@@ -2258,7 +2219,7 @@ F 3 "" H 2950 8000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910CCB
 P 3100 7900
 F 0 "C?" H 3150 7950 50  0000 L CNN
@@ -2269,7 +2230,7 @@ F 3 "" H 3100 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910CD2
 P 3450 7900
 F 0 "C?" H 3500 7950 50  0000 L CNN
@@ -2280,7 +2241,7 @@ F 3 "" H 3450 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59910CD9
 P 3800 7900
 F 0 "C?" H 3850 7950 50  0000 L CNN
@@ -2293,7 +2254,7 @@ $EndComp
 Text Notes 3400 7750 0    60   ~ 0
 Place near\nVBUS
 $Comp
-L +5V #PWR0139
+L power:+5V #PWR0139
 U 1 1 59910CE1
 P 2950 7800
 F 0 "#PWR0139" H 2950 7650 50  0001 C CNN
@@ -2358,7 +2319,7 @@ NoConn ~ 5250 13650
 Text Notes 5350 13600 0    60   ~ 0
 Note: PRCTL may be used\nto switch USB power
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A552C22
 P 2950 13200
 F 0 "R?" V 3030 13200 50  0000 C CNN
@@ -2369,7 +2330,7 @@ F 3 "" H 2950 13200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A552DF7
 P 2950 13350
 F 0 "#PWR?" H 2950 13100 50  0001 C CNN
@@ -2392,7 +2353,7 @@ XTAL_25_O
 Text Label 1200 11750 1    60   ~ 0
 XTAL_25_I
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A5579F7
 P 1050 11900
 F 0 "R?" V 1130 11900 50  0000 C CNN
@@ -2403,7 +2364,7 @@ F 3 "" H 1050 11900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5A559182
 P 900 12600
 F 0 "C?" H 950 12650 50  0000 L CNN
@@ -2414,7 +2375,7 @@ F 3 "" H 900 12600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal 25MHz
+L poc-rescue:Crystal 25MHz
 U 1 1 5A5594BD
 P 1050 12250
 F 0 "25MHz" H 1050 12400 50  0000 C CNN
@@ -2425,7 +2386,7 @@ F 3 "" H 1050 12250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5A55A0AA
 P 1200 12600
 F 0 "C?" H 1250 12650 50  0000 L CNN
@@ -2436,7 +2397,7 @@ F 3 "" H 1200 12600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A55A975
 P 1050 12900
 F 0 "#PWR?" H 1050 12650 50  0001 C CNN
@@ -2464,7 +2425,7 @@ Connection ~ 1200 11900
 Connection ~ 900  11900
 Connection ~ 900  12250
 $Comp
-L Conn_01x05 J?
+L poc-rescue:Conn_01x05 J?
 U 1 1 5A565AAD
 P 7200 11850
 F 0 "J?" H 7200 12150 50  0000 C CNN
@@ -2477,7 +2438,7 @@ $EndComp
 Wire Wire Line
 	6050 11750 7000 11750
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A566E8D
 P 6200 11400
 F 0 "R?" V 6280 11400 50  0000 C CNN
@@ -2488,7 +2449,7 @@ F 3 "" H 6200 11400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A56736B
 P 6450 11400
 F 0 "R?" V 6530 11400 50  0000 C CNN
@@ -2499,7 +2460,7 @@ F 3 "" H 6450 11400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A5674E5
 P 6650 11400
 F 0 "R?" V 6730 11400 50  0000 C CNN
@@ -2510,7 +2471,7 @@ F 3 "" H 6650 11400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A56765C
 P 6850 11400
 F 0 "R?" V 6930 11400 50  0000 C CNN
@@ -2545,7 +2506,7 @@ Wire Wire Line
 Connection ~ 6450 11250
 Connection ~ 6650 11250
 $Comp
-L +3V3 #PWR?
+L power:+3V3 #PWR?
 U 1 1 5A568B3C
 P 6850 11150
 F 0 "#PWR?" H 6850 11000 50  0001 C CNN
@@ -2559,7 +2520,7 @@ Wire Wire Line
 	6850 11250 6850 11150
 Connection ~ 6850 11250
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A56A57A
 P 4850 13800
 F 0 "R?" V 4930 13800 50  0000 C CNN
@@ -2570,7 +2531,7 @@ F 3 "" H 4850 13800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR?
+L power:+3V3 #PWR?
 U 1 1 5A56A806
 P 4850 13950
 F 0 "#PWR?" H 4850 13800 50  0001 C CNN
@@ -2582,7 +2543,7 @@ F 3 "" H 4850 13950 50  0001 C CNN
 $EndComp
 NoConn ~ 6050 12650
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A56CD7E
 P 6750 12900
 F 0 "R?" V 6830 12900 50  0000 C CNN
@@ -2593,7 +2554,7 @@ F 3 "" H 6750 12900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A56D3D8
 P 6750 12650
 F 0 "R?" V 6830 12650 50  0000 C CNN
@@ -2604,7 +2565,7 @@ F 3 "" H 6750 12650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D?
+L poc-rescue:LED D?
 U 1 1 5A56D8C6
 P 7150 12650
 F 0 "D?" H 7150 12750 50  0000 C CNN
@@ -2615,7 +2576,7 @@ F 3 "" H 7150 12650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D?
+L poc-rescue:LED D?
 U 1 1 5A56DB5B
 P 7150 12900
 F 0 "D?" H 7150 13000 50  0000 C CNN
@@ -2626,7 +2587,7 @@ F 3 "" H 7150 12900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR?
+L power:+3V3 #PWR?
 U 1 1 5A56DE7D
 P 7300 13100
 F 0 "#PWR?" H 7300 12950 50  0001 C CNN
@@ -2657,7 +2618,7 @@ NoConn ~ 4850 11150
 NoConn ~ 4350 11150
 NoConn ~ 4250 11150
 $Comp
-L +3V3 #PWR?
+L power:+3V3 #PWR?
 U 1 1 5A574591
 P 4750 13650
 F 0 "#PWR?" H 4750 13500 50  0001 C CNN
@@ -2669,7 +2630,7 @@ F 3 "" H 4750 13650 50  0001 C CNN
 $EndComp
 NoConn ~ 4950 13650
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A578E0F
 P 5150 11150
 F 0 "#PWR?" H 5150 10900 50  0001 C CNN
@@ -2680,7 +2641,7 @@ F 3 "" H 5150 11150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR?
+L power:+3V3 #PWR?
 U 1 1 5A57957E
 P 4550 11150
 F 0 "#PWR?" H 4550 11000 50  0001 C CNN
@@ -2693,7 +2654,7 @@ $EndComp
 NoConn ~ 3850 11150
 NoConn ~ 4050 11150
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A579D72
 P 4150 11150
 F 0 "#PWR?" H 4150 10900 50  0001 C CNN
@@ -2704,7 +2665,7 @@ F 3 "" H 4150 11150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
+L poc-rescue:R R?
 U 1 1 5A57D5CF
 P 2800 11750
 F 0 "R?" V 2880 11750 50  0000 C CNN
@@ -2715,7 +2676,7 @@ F 3 "" H 2800 11750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A57D886
 P 2650 11750
 F 0 "#PWR?" H 2650 11500 50  0001 C CNN
@@ -2734,7 +2695,7 @@ TXP
 Text HLabel 2950 12350 0    60   Input ~ 0
 TXN
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A537556
 P 4450 11150
 F 0 "#PWR?" H 4450 10900 50  0001 C CNN

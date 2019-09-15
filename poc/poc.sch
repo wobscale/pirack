@@ -1,45 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:cm3l
-LIBS:LAN9512
-LIBS:usb_a_x2
-LIBS:CD74HC154
-LIBS:sc16is752
-LIBS:KSZ9897R
-LIBS:belfuse_gige
-LIBS:SAM4E
-LIBS:DP83867
-LIBS:ds75
+EESchema Schematic File Version 4
 LIBS:poc-cache
-EELAYER 25 0
+EELAYER 30 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
@@ -54,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 59896F64
 P 800 700
 F 0 "#PWR01" H 800 550 50  0001 C CNN
@@ -65,7 +26,7 @@ F 3 "" H 800 700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 59897011
 P 800 1900
 F 0 "#PWR02" H 800 1650 50  0001 C CNN
@@ -76,7 +37,7 @@ F 3 "" H 800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR03
+L power:Earth #PWR03
 U 1 1 598972A4
 P 800 2300
 F 0 "#PWR03" H 800 2050 50  0001 C CNN
@@ -87,7 +48,7 @@ F 3 "" H 800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR04
+L power:+3V3 #PWR04
 U 1 1 5989782B
 P 800 1100
 F 0 "#PWR04" H 800 950 50  0001 C CNN
@@ -98,7 +59,7 @@ F 3 "" H 800 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +1V8 #PWR05
+L power:+1V8 #PWR05
 U 1 1 59897F2C
 P 800 1500
 F 0 "#PWR05" H 800 1350 50  0001 C CNN
@@ -109,7 +70,7 @@ F 3 "" H 800 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR_FLAG #FLG06
+L power:PWR_FLAG #FLG06
 U 1 1 59898EBD
 P 800 700
 F 0 "#FLG06" H 800 775 50  0001 C CNN
@@ -120,7 +81,7 @@ F 3 "" H 800 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG07
+L power:PWR_FLAG #FLG07
 U 1 1 59898F71
 P 800 1100
 F 0 "#FLG07" H 800 1175 50  0001 C CNN
@@ -131,7 +92,7 @@ F 3 "" H 800 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG08
+L power:PWR_FLAG #FLG08
 U 1 1 5989901E
 P 800 1500
 F 0 "#FLG08" H 800 1575 50  0001 C CNN
@@ -142,7 +103,7 @@ F 3 "" H 800 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG09
+L power:PWR_FLAG #FLG09
 U 1 1 59899101
 P 800 1900
 F 0 "#FLG09" H 800 1975 50  0001 C CNN
@@ -153,7 +114,7 @@ F 3 "" H 800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG010
+L power:PWR_FLAG #FLG010
 U 1 1 59899286
 P 800 2300
 F 0 "#FLG010" H 800 2375 50  0001 C CNN
@@ -164,7 +125,7 @@ F 3 "" H 800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR011
+L power:+5V #PWR011
 U 1 1 598CFAE4
 P 800 700
 F 0 "#PWR011" H 800 550 50  0001 C CNN
@@ -175,7 +136,7 @@ F 3 "" H 800 700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 598CFAE5
 P 800 1900
 F 0 "#PWR012" H 800 1650 50  0001 C CNN
@@ -186,7 +147,7 @@ F 3 "" H 800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR013
+L power:Earth #PWR013
 U 1 1 598CFAE6
 P 800 2300
 F 0 "#PWR013" H 800 2050 50  0001 C CNN
@@ -197,7 +158,7 @@ F 3 "" H 800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR014
+L power:+3V3 #PWR014
 U 1 1 598CFAE7
 P 800 1100
 F 0 "#PWR014" H 800 950 50  0001 C CNN
@@ -208,7 +169,7 @@ F 3 "" H 800 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +1V8 #PWR015
+L power:+1V8 #PWR015
 U 1 1 598CFAE8
 P 800 1500
 F 0 "#PWR015" H 800 1350 50  0001 C CNN
@@ -219,7 +180,7 @@ F 3 "" H 800 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR_FLAG #FLG016
+L power:PWR_FLAG #FLG016
 U 1 1 598CFAE9
 P 800 700
 F 0 "#FLG016" H 800 775 50  0001 C CNN
@@ -230,7 +191,7 @@ F 3 "" H 800 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG017
+L power:PWR_FLAG #FLG017
 U 1 1 598CFAEA
 P 800 1100
 F 0 "#FLG017" H 800 1175 50  0001 C CNN
@@ -241,7 +202,7 @@ F 3 "" H 800 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG018
+L power:PWR_FLAG #FLG018
 U 1 1 598CFAEB
 P 800 1500
 F 0 "#FLG018" H 800 1575 50  0001 C CNN
@@ -252,7 +213,7 @@ F 3 "" H 800 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG019
+L power:PWR_FLAG #FLG019
 U 1 1 598CFAEC
 P 800 1900
 F 0 "#FLG019" H 800 1975 50  0001 C CNN
@@ -263,7 +224,7 @@ F 3 "" H 800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG020
+L power:PWR_FLAG #FLG020
 U 1 1 598CFAED
 P 800 2300
 F 0 "#FLG020" H 800 2375 50  0001 C CNN
@@ -274,7 +235,7 @@ F 3 "" H 800 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SAM4E U?
+L SAM4E:SAM4E U?
 U 1 1 59906DC8
 P 6900 8400
 F 0 "U?" H 6900 8300 50  0000 C CNN
@@ -285,7 +246,7 @@ F 3 "DOCUMENTATION" H 6900 8400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 59906F6C
 P 5850 10650
 F 0 "#PWR021" H 5850 10400 50  0001 C CNN
@@ -296,7 +257,7 @@ F 3 "" H 5850 10650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR022
+L power:+3V3 #PWR022
 U 1 1 59906F8C
 P 5550 10650
 F 0 "#PWR022" H 5550 10500 50  0001 C CNN
@@ -307,7 +268,7 @@ F 3 "" H 5550 10650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3V3 #PWR023
+L power:+3V3 #PWR023
 U 1 1 59906FC0
 P 8050 10650
 F 0 "#PWR023" H 8050 10500 50  0001 C CNN
@@ -332,7 +293,7 @@ Wire Wire Line
 Text Label 3800 11650 2    60   ~ 0
 INT_REG
 $Comp
-L GND #PWR024
+L power:GND #PWR024
 U 1 1 5990729C
 P 3800 11850
 F 0 "#PWR024" H 3800 11600 50  0001 C CNN
@@ -343,7 +304,7 @@ F 3 "" H 3800 11850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599072AE
 P 4350 11750
 F 0 "C?" H 4360 11820 50  0000 L CNN
@@ -354,7 +315,7 @@ F 3 "" H 4350 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5990730A
 P 4650 11750
 F 0 "C?" H 4660 11820 50  0000 L CNN
@@ -365,7 +326,7 @@ F 3 "" H 4650 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907382
 P 4950 11750
 F 0 "C?" H 4960 11820 50  0000 L CNN
@@ -376,7 +337,7 @@ F 3 "" H 4950 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907388
 P 5250 11750
 F 0 "C?" H 5260 11820 50  0000 L CNN
@@ -387,7 +348,7 @@ F 3 "" H 5250 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599073D7
 P 5550 11750
 F 0 "C?" H 5560 11820 50  0000 L CNN
@@ -398,7 +359,7 @@ F 3 "" H 5550 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599073DD
 P 5850 11750
 F 0 "C?" H 5860 11820 50  0000 L CNN
@@ -409,7 +370,7 @@ F 3 "" H 5850 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 599073F1
 P 6150 11750
 F 0 "C?" H 6160 11820 50  0000 L CNN
@@ -420,7 +381,7 @@ F 3 "" H 6150 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5990749D
 P 4050 11750
 F 0 "C?" H 4060 11820 50  0000 L CNN
@@ -431,9 +392,9 @@ F 3 "" H 4050 11750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 11650 6150 11650
+	3800 11650 4050 11650
 Wire Wire Line
-	3800 11850 6150 11850
+	3800 11850 4050 11850
 Connection ~ 4050 11650
 Connection ~ 4350 11650
 Connection ~ 4650 11650
@@ -451,7 +412,7 @@ Connection ~ 4050 11850
 Text Notes 6450 11900 0    60   ~ 0
 Place near\nVDDCORE \n& VDDPLL
 $Comp
-L GND #PWR025
+L power:GND #PWR025
 U 1 1 5990793F
 P 3750 12550
 F 0 "#PWR025" H 3750 12300 50  0001 C CNN
@@ -462,7 +423,7 @@ F 3 "" H 3750 12550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907945
 P 4300 12450
 F 0 "C?" H 4310 12520 50  0000 L CNN
@@ -473,7 +434,7 @@ F 3 "" H 4300 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5990794B
 P 4600 12450
 F 0 "C?" H 4610 12520 50  0000 L CNN
@@ -484,7 +445,7 @@ F 3 "" H 4600 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907951
 P 4900 12450
 F 0 "C?" H 4910 12520 50  0000 L CNN
@@ -495,7 +456,7 @@ F 3 "" H 4900 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907957
 P 5200 12450
 F 0 "C?" H 5210 12520 50  0000 L CNN
@@ -506,7 +467,7 @@ F 3 "" H 5200 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5990795D
 P 5500 12450
 F 0 "C?" H 5510 12520 50  0000 L CNN
@@ -517,7 +478,7 @@ F 3 "" H 5500 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907963
 P 5800 12450
 F 0 "C?" H 5810 12520 50  0000 L CNN
@@ -528,7 +489,7 @@ F 3 "" H 5800 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 59907969
 P 6100 12450
 F 0 "C?" H 6110 12520 50  0000 L CNN
@@ -539,7 +500,7 @@ F 3 "" H 6100 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L poc-rescue:C_Small C?
 U 1 1 5990796F
 P 4000 12450
 F 0 "C?" H 4010 12520 50  0000 L CNN
@@ -550,9 +511,9 @@ F 3 "" H 4000 12450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 12350 6100 12350
+	3750 12350 4000 12350
 Wire Wire Line
-	3750 12550 6100 12550
+	3750 12550 4000 12550
 Connection ~ 4000 12350
 Connection ~ 4300 12350
 Connection ~ 4600 12350
@@ -570,7 +531,7 @@ Connection ~ 4000 12550
 Text Notes 6400 12600 0    60   ~ 0
 Place near\nVDDIO\n& VDDIN
 $Comp
-L +3V3 #PWR026
+L power:+3V3 #PWR026
 U 1 1 59907C36
 P 3750 12350
 F 0 "#PWR026" H 3750 12200 50  0001 C CNN
@@ -592,4 +553,60 @@ U 5992D94E
 F0 "Bank1" 60
 F1 "Bank1.sch" 60
 $EndSheet
+Wire Wire Line
+	4050 11650 4350 11650
+Wire Wire Line
+	4350 11650 4650 11650
+Wire Wire Line
+	4650 11650 4950 11650
+Wire Wire Line
+	4950 11650 5250 11650
+Wire Wire Line
+	5250 11650 5550 11650
+Wire Wire Line
+	5550 11650 5850 11650
+Wire Wire Line
+	5850 11650 6150 11650
+Wire Wire Line
+	5850 11850 6150 11850
+Wire Wire Line
+	5550 11850 5850 11850
+Wire Wire Line
+	5250 11850 5550 11850
+Wire Wire Line
+	4950 11850 5250 11850
+Wire Wire Line
+	4650 11850 4950 11850
+Wire Wire Line
+	4350 11850 4650 11850
+Wire Wire Line
+	4050 11850 4350 11850
+Wire Wire Line
+	4000 12350 4300 12350
+Wire Wire Line
+	4300 12350 4600 12350
+Wire Wire Line
+	4600 12350 4900 12350
+Wire Wire Line
+	4900 12350 5200 12350
+Wire Wire Line
+	5200 12350 5500 12350
+Wire Wire Line
+	5500 12350 5800 12350
+Wire Wire Line
+	5800 12350 6100 12350
+Wire Wire Line
+	5800 12550 6100 12550
+Wire Wire Line
+	5500 12550 5800 12550
+Wire Wire Line
+	5200 12550 5500 12550
+Wire Wire Line
+	4900 12550 5200 12550
+Wire Wire Line
+	4600 12550 4900 12550
+Wire Wire Line
+	4300 12550 4600 12550
+Wire Wire Line
+	4000 12550 4300 12550
 $EndSCHEMATC
