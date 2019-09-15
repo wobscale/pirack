@@ -113,9 +113,9 @@ F 3 "" H 1200 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  850  1200 850 
+	700  850  900  850 
 Wire Wire Line
-	1200 1050 700  1050
+	1200 1050 900  1050
 Connection ~ 900  850 
 Connection ~ 900  1050
 Text Notes 900  800  0    60   ~ 0
@@ -187,9 +187,9 @@ F 3 "" H 1200 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  1600 1200 1600
+	700  1600 900  1600
 Wire Wire Line
-	1200 1800 700  1800
+	1200 1800 900  1800
 Connection ~ 900  1600
 Connection ~ 900  1800
 Text Notes 900  1550 0    60   ~ 0
@@ -198,4 +198,12 @@ Text Notes 2550 2050 0    60   ~ 0
 Temp Sensor
 Text Notes 2650 3600 0    60   ~ 0
 DUART
+Wire Wire Line
+	900  850  1200 850 
+Wire Wire Line
+	900  1050 700  1050
+Wire Wire Line
+	900  1600 1200 1600
+Wire Wire Line
+	900  1800 700  1800
 $EndSCHEMATC
