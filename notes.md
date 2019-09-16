@@ -112,6 +112,20 @@ This one can be bought at various fixed outputs. Still 3A out.
 https://www.digikey.com/product-detail/en/texas-instruments/TPS54354PWP/296-17071-ND/659974
 
 
+Switching
+---------
+
+We need to sequence power-up of 5V -> 3V3 -> 1V8 for CM3L / associated circuitry.
+Bring up 5V, then 3V3, then 1V8 (per CM3L datasheet &sec;7.1).
+Possibilities:
+
+1. Power dist. switch for all voltages, individually switched by GPIOs on host CPU. Most flexible, but that's a lot of IO and timing-sensitive code.
+1. Power dist. switch for all voltages, enable line for e.g. 3V3 switch tied to switched 5V out with cap to control switch delay. Easy, probably will work fine, high BOM.
+1. Power dist. switch for 5V, high-side NMOSFET (should be OK since Vgs > Vds? as long as Vth < 1.5V) with delay caps daisy-chained for lower voltages. Lowest (?) BOM, but perhaps more fiddly to get right.
+
+(Using a power dist. switch for 5V makes things easy since the turn-on voltage isn't tied relative to 5V, so e.g. a 3V3 GPIO output will still be able to control it.)
+
+
 Ethernet
 ========
 
